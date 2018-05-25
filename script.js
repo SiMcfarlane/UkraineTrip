@@ -8,7 +8,7 @@ close.addEventListener('click', closeNav);
 
 function openNav() {
     ul.style.top = "30px";
-    header.style.paddingTop = "250px";
+    header.style.paddingTop = "350px";
     hamb.style.display = "none";
     close.style.display = "block";
 }
