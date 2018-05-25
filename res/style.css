@@ -30,78 +30,53 @@ header {
   padding: 0 1rem;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(
-      rgba(11,60,93, 0.9), 
-      rgba(11,60,93, 0.9)
-    ),
-    
-    url(imgs/bg-image.jpg);
+  background: linear-gradient( rgba(11,60,93, 0.9), rgba(11,60,93, 0.9)), url(imgs/bg-image.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
- img{
- transform: scale(0.3);
- display: inline-block;
- position: absolute;
- 
-  
+.header-flex, .header-flex > * {
+  display: flex;
 }
 .header-flex{
   height: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
- 
-  
 }
 .flex-inner {
-  margin: 1rem 0;
-  display: flex;
-  flex-wrap: wrap-reverse;
   justify-content: space-between;
 }
 
-.hero {
-  flex-basis: 70%;
- 
-
-}
 .hero p {
   margin-right: 10rem;
   font-size: 1.2rem;
- 
- 
 }
 .hero h1 {
   font-size: 2.5rem;
 }
-.btn{
-  width: 10rem;
-  display: block;
-  margin-top: 2rem;
-  padding: 0.6rem 2rem;
+.btn, .main-ul li a {
   background: #D9B310;
+  display: block;
   border-radius: 3px;
   font-weight: 600;
+  text-align: center;
+}
+.btn{
+  width: 10rem;
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
 }
 
 .main-ul {
-  display: flex;
+  height: 100%;
   flex-direction: column;
-  justify-content: flex-end;
-  
+  justify-content: space-between;
 }
 .main-ul li a {
-  display: block;
-  font-weight: 600;
+  
   padding: 0.9rem 5rem;
-  margin: 0.5rem 0 0 0;
-  background: #D9B310;
-  text-align: center;
-  border-radius: 3px;
+  margin: 0.5rem 0;
+ 
 }
 .main-ul li a:hover, .main-ul li a:focus,
  .btn:hover, .btn:focus {
@@ -110,8 +85,8 @@ header {
 
 .menu, .close {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 2rem;
   display: none;
   font-size: 1.6rem;
 }
@@ -121,11 +96,14 @@ header {
 h2 {
   color:black;
 }
-@media only screen and (max-width: 846px) {
+@media only screen and (max-width: 860px) {
   .main-ul {
+   background: rgba(0, 0, 0, 0.3);
+   padding: 1rem;
    position: absolute;
-   top: -250px;
+   top: -1000px;
    left: 50%;
+   height: auto;
    transform: translateX(-50%);
    transition: all 250ms ease-in-out;
   }
@@ -133,11 +111,7 @@ h2 {
   
   padding-bottom: 6rem;
   }
-  .logo{
-    
   
-    
-  }
   .hero h1 {
     font-size: 2rem;
   }
@@ -149,9 +123,7 @@ h2 {
    
   }
   .hero {
-    flex-basis: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -164,5 +136,10 @@ h2 {
    
   }
 }
+@media only screen and (max-height: 460px) {
+  header{
+    height: auto;
+  }
+}
 
-/* END OF HEADER STYLES */
+/* END OF HEADER STYLES, FINALLY */

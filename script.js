@@ -13,7 +13,7 @@ function openNav() {
     close.style.display = "block";
 }
 function closeNav() {
-    ul.style.top = "-250px";
+    ul.style.top = "-1000px";
     header.style.paddingTop = "0";
     hamb.style.display = "block";
     close.style.display = "none";
