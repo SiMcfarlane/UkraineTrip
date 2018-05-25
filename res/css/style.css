@@ -1,0 +1,137 @@
+
+
+header {
+  transition: all 250ms ease-in-out;
+  padding: 0 1rem;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient( rgba(11,60,93, 0.9), rgba(11,60,93, 0.9)), url(../imgs/bg-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-flex, .header-flex > * {
+  display: flex;
+}
+.header-flex{
+  height: 100%;
+  align-items: center;
+}
+.flex-inner {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.hero p {
+  margin-right: 10rem;
+  font-size: 1.2rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.btn, .main-ul li a {
+  background: #D9B310;
+  display: block;
+  border-radius: 3px;
+  font-weight: 600;
+  text-align: center;
+}
+.btn{
+  width: 10rem;
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
+}
+
+.main-ul {
+  flex-direction: column;
+  
+  
+}
+.main-ul li a {
+  
+  padding: 0.9rem 5rem;
+  margin: 0.5rem 0 0;
+ 
+}
+.main-ul li a:hover, .main-ul li a:focus,
+ .btn:hover, .btn:focus {
+  background: rgb(155, 129, 18);
+}
+
+.menu, .close {
+  position: absolute;
+  top: 1.1rem;
+  left: 1.6rem;
+  display: none;
+  font-size: 1.6rem;
+}
+.close {
+  font-size: 2rem;
+}
+h2 {
+  color:black;
+}
+@media only screen and (max-width: 860px) {
+  .main-ul {
+   background: rgba(0, 0, 0, 0.3);
+   padding: 1rem;
+   position: absolute;
+   top: -1000px;
+   left: 50%;
+   height: auto;
+   transform: translateX(-50%);
+   transition: all 250ms ease-in-out;
+  }
+  header {
+  
+  padding-bottom: 6rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .menu {
+    display: block;
+   
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero p {
+    margin-right: 0;
+  }
+  .flex-inner {
+   margin-top: 3rem;
+   
+  }
+}
+@media only screen and (max-height: 460px) {
+  header{
+    height: auto;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .flex-inner {
+    margin-top: 7rem;
+  }
+  header {
+    height: auto;
+  }
+  .main-ul {
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+  }
+  .close, .menu {
+    top: 0rem;
+  }
+}
+/* END OF HEADER STYLES, FINALLY */

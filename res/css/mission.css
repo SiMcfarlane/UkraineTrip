@@ -1,0 +1,46 @@
+*{
+   
+}
+
+.mission-header {
+    height: 20vh;
+    background: linear-gradient( rgba(11,60,93, 0.9), rgba(11,60,93, 0.9)), url(../imgs/bg-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header h1 {
+    position: relative;
+    top: 1rem;
+}
+.mission-ul {
+    display: flex;
+    width: 100%;
+    height: 52%;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+
+}
+.mission-ul li {
+    
+    
+}
+.mission-ul li a{
+     padding: 0.9rem 5rem;
+     background-color: #D9B310;
+     border-radius: 3px;
+
+}
+.mission-ul a:hover, .mission-ul a:focus{
+    background: rgb(155, 129, 18);
+
+}
+h2{
+    color: black;
+    margin-top: 10rem;
+}
